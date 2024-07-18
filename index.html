@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Cleaner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Cleaner</h1>
+        <textarea id="numberInput" placeholder="Paste your numbers here"></textarea>
+        <button onclick="cleanNumber()">Clean</button>
+        <div class="checkbox-container">
+            <div>
+                <input type="checkbox" id="insertCommas" name="insertCommas" onchange="updateDisplay()">
+                <label for="insertCommas">Insert commas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="removeDuplicates" name="removeDuplicates" onchange="updateDisplay()">
+                <label for="removeDuplicates">Remove duplicates</label>
+            </div>
+        </div>
+        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
